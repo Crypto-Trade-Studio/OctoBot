@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  target-branch: "dev"
+  schedule:
+    interval: "weekly"
+  open-pull-requests-limit: 10
+  allow:
+    - dependency-name: "OctoBot*"
+    - dependency-name: "Async-Channel"
+    - dependency-name: "cython"
+  reviewers:
+  - Herklos
+  - GuillaumeDSM
+  assignees:
+  - Herklos
+  - GuillaumeDSM
